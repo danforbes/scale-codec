@@ -1,0 +1,23 @@
+{
+  "name": "scale-codec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Unlicense",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "clean": "rm -fr ./node_modules ./build",
+    "prettier": "./node_modules/.bin/prettier --write ./src",
+    "test": "./node_modules/.bin/jest ./src"
+  },
+  "dependencies": {
+    "bn.js": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^4.11.6",
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  }
+}
