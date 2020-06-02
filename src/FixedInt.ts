@@ -1,7 +1,7 @@
 import BN from "bn.js";
 import { DecodeResult } from "./Decoder";
 
-export type FixedIntDecoder = (scale: Buffer, len: number) => DecodeResult<BN>;
+export type FixedIntDecoder = (scale: Buffer, len: number, signed: boolean) => DecodeResult<BN>;
 
 // https://www.substrate.io/kb/advanced/codec#fixed-width-integers
 export default function (scale: Buffer, len: number, signed: boolean): DecodeResult<BN> {
